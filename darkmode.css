@@ -145,6 +145,10 @@
 	background-color: var(--bg-darker-color) !important;
 }
 
+#page-wrapper {
+	background-color: var(--bg-color) !important;
+}
+
 /* Dropdown menu */
 #jump-to-activity {
 	background-color: var(--bg-darker-color) !important;
