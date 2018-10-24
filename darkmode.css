@@ -17,6 +17,20 @@
 
 
 
+/* Top Navbar */
+.fixed-top.navbar .dropdown-menu {
+	background-color: var(--bg-darker-color) !important;
+	color: var(--a-text-lighter-color) !important;
+	border: white 1px solid;
+}
+
+.fixed-top.navbar .dropdown-menu a {
+	color: var(--text-color) !important;
+}
+
+.fixed-top.navbar .dropdown-menu a:hover {
+	background-color: var(--bg-color) !important;
+}
 
 
 /* Main Course Content */
@@ -156,6 +170,15 @@
 	color: var(--a-text-color) !important;
 }
 
+.nav-tabs .alert-secondary {
+	background-color: var(--bg-darker-color) !important;
+}
+
+.nav-tabs .alert-secondary .singleselect {
+	background-color: var(--bg-darker-color) !important;
+	color: var(--a-text-lighter-color) !important;
+}
+
 
 
 
@@ -213,7 +236,7 @@
 
 
 
-/* Notifications  */
+/* Notifications */
 .popover-region-header-container {
 	background-color: var(--bg-darker-color) !important;
 	color: var(--text-lighter-color) !important;
