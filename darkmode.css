@@ -16,11 +16,10 @@
 
 
 
-
 /* Top Navbar */
 .fixed-top.navbar .dropdown-menu {
 	background-color: var(--bg-darker-color) !important;
-	color: var(--a-text-lighter-color) !important;
+  	color: var(--a-text-lighter-color) !important;
 	border: white 1px solid;
 }
 
@@ -31,7 +30,6 @@
 .fixed-top.navbar .dropdown-menu a:hover {
 	background-color: var(--bg-color) !important;
 }
-
 
 /* Main Course Content */
 #region-main-box,
@@ -54,7 +52,6 @@
 
 
 
-
 /* Filter Activities Menu */
 .filterActivities,
 #filterActivities,
@@ -62,7 +59,6 @@
 	color: var(--text-color) !important;
 	background-color: var(--bg-color) !important;
 }
-
 
 
 
@@ -84,7 +80,6 @@
 .breadcrumb a {
 	color: var(--a-text-color) !important;
 }
-
 
 
 
@@ -113,12 +108,10 @@
 
 
 
-
 /* navdrawer */
 #nav-drawer {
 	border-right: white 2px solid
 }
-
 
 
 
@@ -170,15 +163,14 @@
 	color: var(--a-text-color) !important;
 }
 
-.nav-tabs .alert-secondary {
+.nav-tabs .alert-secondary{
 	background-color: var(--bg-darker-color) !important;
 }
 
 .nav-tabs .alert-secondary .singleselect {
 	background-color: var(--bg-darker-color) !important;
-	color: var(--a-text-lighter-color) !important;
+  	color: var(--a-text-lighter-color) !important;
 }
-
 
 
 
@@ -191,7 +183,6 @@
 .card tr:nth-child(odd) {
 	background-color: #49515a !important;
 }
-
 
 
 
@@ -217,7 +208,6 @@
 
 
 
-
 /* Dropdown menu */
 #jump-to-activity {
 	background-color: var(--bg-darker-color) !important;
@@ -227,13 +217,11 @@
 
 
 
-
 /* Profile Page */
 .profile_tree section {
 	background-color: var(--bg-color) !important;
 	border: white solid 1px !important;
 }
-
 
 
 /* Notifications */
@@ -265,17 +253,17 @@
 	background-color: var(--bg-color) !important;
 }
 
-
 /* Accesibility Options */
 .modal-content {
 	background-color: var(--bg-color) !important;
-	color: var(--text-color) !important;
+		color: var(--text-color) !important;
+
 }
 
 .modal-content .modal-header {
-	background-color: var(--bg-darker-color) !important;
-	color: var(--text-color) !important;
-}
+		background-color: var(--bg-darker-color) !important;
+		color: var(--text-color) !important;
+} 
 
 .modal-content .modal-header > button {
 	color: var(--a-text-color) !important;
@@ -288,7 +276,7 @@
 }
 }
 
-@-moz-document url-prefix("https://moodle.port.ac.uk/course/view.php?id=7") {
+@-moz-document url-prefix("https://moodle.port.ac.uk/course/view.php") {
 /* Staff Helf Resources */
 .summary > div > div {
 	background-color: var(--bg-darker-color) !important;
@@ -329,4 +317,5 @@ table {
 table:nth-child(odd) {
 	background-color: #49515a !important;
 }
+
 }
