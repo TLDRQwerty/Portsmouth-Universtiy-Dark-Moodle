@@ -1,3 +1,4 @@
+@-moz-document url-prefix("https://moodle.port.ac.uk/") {
 /* ==UserStyle==
 @name         Portsmouth University Dark Moodle
 @namespace    github.com/TLDRQwerty/Portsmouth-Uni-Dark-Moodle
@@ -5,8 +6,6 @@
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
-
-
 :root {
 	--bg-color: #343a40;
 	--text-color: #f8f9ff;
@@ -16,8 +15,13 @@
 }
 
 
+
+
+
+
 /* Main Course Content */
-#region-main-box, #region-main .card {
+#region-main-box,
+#region-main .card {
 	background-color: var(--bg-color) !important;
 	color: var(--text-color) !important;
 }
@@ -33,14 +37,27 @@
 	color: var(--text-color) !important;
 }
 
+
+
+
+
 /* Filter Activities Menu */
-.filterActivities, #filterActivities, #filterActivities::placeholder {
+.filterActivities,
+#filterActivities,
+#filterActivities::placeholder {
 	color: var(--text-color) !important;
 	background-color: var(--bg-color) !important;
 }
 
+
+
+
+
 /* Header */
-#page-header, #page-header h1, .breadcrumb, .breadcrumb a:hover {
+#page-header,
+#page-header h1,
+.breadcrumb,
+.breadcrumb a:hover {
 	background-color: var(--bg-color) !important;
 	color: var(--text-color) !important;
 }
@@ -54,12 +71,17 @@
 	color: var(--a-text-color) !important;
 }
 
+
+
+
+
 /* Side bar */
 .block-region {
-	border: 2px white solid;
+	border-right: 2px white solid;
 }
 
-.block-region div, .block-region h5 {
+.block-region div,
+.block-region h5 {
 	background-color: var(--bg-color) !important;
 	color: var(--text-color) !important;
 }
@@ -74,13 +96,23 @@
 	color: var(--text-color) !important;
 }
 
+
+
+
+
 /* navdrawer */
 #nav-drawer {
 	border-right: white 2px solid
 }
 
+
+
+
+
 /* Dashboard */
-#page-header div, #page-header h3, #usersname{
+#page-header div,
+#page-header h3,
+#usersname {
 	background-color: var(--bg-color) !important;
 	color: var(--text-color) !important;
 }
@@ -89,7 +121,8 @@
 	background-color: var(--bg-darker-color) !important;
 }
 
-.nav-tabs button, .nav-tabs .nav-item .nav-link{
+.nav-tabs button,
+.nav-tabs .nav-item .nav-link {
 	background-color: var(--bg-color) !important;
 	color: var(--text-color) !important;
 	border: white 2px solid;
@@ -105,12 +138,14 @@
 	background-color: var(--bg-color) !important;
 }
 
-#coursesearch2 button, .singlebutton button{
+#coursesearch2 button,
+.singlebutton button {
 	background-color: var(--bg-color) !important;
 	color: var(--a-text-color) !important;
 }
 
-#coursesearch2 button:hover, .singlebutton button:hover {
+#coursesearch2 button:hover,
+.singlebutton button:hover {
 	background-color: var(--bg-color) !important;
 	color: var(--text-color) !important;
 	text-decoration: underline;
@@ -121,6 +156,10 @@
 	color: var(--a-text-color) !important;
 }
 
+
+
+
+
 /* Tables */
 .card tr {
 	background-color: #343a40 !important;
@@ -130,18 +169,21 @@
 	background-color: #49515a !important;
 }
 
+
+
+
+
 /* File Management */
-.filemanager{
+.filemanager {
 	display: inline-block;
 	border: 2px white solid;
-	
 }
 
 .filemanager td {
 	background-color: var(--bg-darker-color) !important;
 }
 
-.filemanager > div > div > div{
+.filemanager > div > div > div {
 	background-color: var(--bg-darker-color) !important;
 }
 
@@ -149,8 +191,119 @@
 	background-color: var(--bg-color) !important;
 }
 
+
+
+
+
 /* Dropdown menu */
 #jump-to-activity {
 	background-color: var(--bg-darker-color) !important;
 	color: var(--a-text-lighter-color) !important;
+}
+
+
+
+
+
+/* Profile Page */
+.profile_tree section {
+	background-color: var(--bg-color) !important;
+	border: white solid 1px !important;
+}
+
+
+
+/* Notifications  */
+.popover-region-header-container {
+	background-color: var(--bg-darker-color) !important;
+	color: var(--text-lighter-color) !important;
+}
+
+.popover-region-header-container div > a > i {
+	color: var(--text-lighter-color) !important;
+}
+
+.popover-region-content-container {
+	background-color: var(--bg-color) !important;
+	color: var(--text-color) !important;
+}
+
+.popover-region-container a {
+
+	color: var(--a-text-color) !important;
+}
+
+.popover-region-container a:hover {
+
+	color: var(--text-color) !important;
+}
+
+.popover-region-footer-container {
+	background-color: var(--bg-color) !important;
+}
+
+
+/* Accesibility Options */
+.modal-content {
+	background-color: var(--bg-color) !important;
+	color: var(--text-color) !important;
+}
+
+.modal-content .modal-header {
+	background-color: var(--bg-darker-color) !important;
+	color: var(--text-color) !important;
+}
+
+.modal-content .modal-header > button {
+	color: var(--a-text-color) !important;
+}
+}
+
+@-moz-document url-prefix("https://moodle.port.ac.uk/user/preferences.php") {
+.card-body > div > div > div {
+	border: white 1px solid;
+}
+}
+
+@-moz-document url-prefix("https://moodle.port.ac.uk/course/view.php?id=7") {
+/* Staff Helf Resources */
+.summary > div > div {
+	background-color: var(--bg-darker-color) !important;
+}
+}
+
+@-moz-document url-prefix("https://moodle.port.ac.uk/message/index.php") {
+/* Messages Page */
+.contacts-area > .searchtextarea {
+	background-color: var(--bg-color) !important;
+}
+
+.contacts-area > .searchtextarea > input {
+	background-color: var(--bg-darker-color) !important;
+	border: white solid 1px !important;
+}
+
+.contacts-area > .searchtextarea > input::placeholder {
+	color: var(--text-lighter-color) !important;
+}
+
+.tabs > .tab {
+	background-color: var(--bg-darker-color) !important;
+}
+
+
+.tabs > .selected > i {
+	color: var(--text-color) !important;
+}
+}
+
+@-moz-document url-prefix("https://moodle.port.ac.uk/message/notificationpreferences.php?") {
+/* Notifcation Settings */
+table {
+	background-color: #343a40 !important;
+}
+
+table:nth-child(odd) {
+	background-color: #49515a !important;
+}
 }
