@@ -6,148 +6,147 @@
 @preprocessor default
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://moodle.port.ac.uk/") {
-  :root {
-    --bg-color: #343a40;
-    --text-color: #f8f9ff;
-    --a-text-color: #aaaaaa;
-    --bg-darker-color: #212121;
-    --text-lighter-color: #f5f6f7
-  }
+
+:root {
+	--bg-color: #343a40;
+	--text-color: #f8f9ff;
+	--a-text-color: #aaaaaa;
+	--bg-darker-color: #212121;
+	--text-lighter-color: #f5f6f7
+}
 
 
-  /* Main Course Content */
-  #region-main-box, #region-main .card {
-    background-color: var(--bg-color) !important;
-    color: var(--text-color) !important;
-  }
+/* Main Course Content */
+#region-main-box, #region-main .card {
+	background-color: var(--bg-color) !important;
+	color: var(--text-color) !important;
+}
 
 
-  #region-main .card a {
-    text-decoration: none;
-    color: var(--a-text-color) !important;
-  }
+#region-main .card a {
+	text-decoration: none;
+	color: var(--a-text-color) !important;
+}
 
-  #region-main .card a:hover {
-    text-decoration: underline;
-    color: var(--text-color) !important;
-  }
+#region-main .card a:hover {
+	text-decoration: underline;
+	color: var(--text-color) !important;
+}
 
-  /* Filter Activities Menu */
-  .filterActivities, #filterActivities, #filterActivities::placeholder {
-    color: var(--text-color) !important;
-    background-color: var(--bg-color) !important;
-  }
+/* Filter Activities Menu */
+.filterActivities, #filterActivities, #filterActivities::placeholder {
+	color: var(--text-color) !important;
+	background-color: var(--bg-color) !important;
+}
 
-  /* Header */
-  #page-header, #page-header h1, .breadcrumb, .breadcrumb a:hover {
-    background-color: var(--bg-color) !important;
-    color: var(--text-color) !important;
-  }
+/* Header */
+#page-header, #page-header h1, .breadcrumb, .breadcrumb a:hover {
+	background-color: var(--bg-color) !important;
+	color: var(--text-color) !important;
+}
 
-  #page-header .withimage {
-    background-image: none !important;
-    background-color: var(--bg-color) !important;
-  }
+#page-header .withimage {
+	background-image: none !important;
+	background-color: var(--bg-color) !important;
+}
 
-  .breadcrumb a {
-    color: var(--a-text-color) !important;
-  }
+.breadcrumb a {
+	color: var(--a-text-color) !important;
+}
 
-  /* Side bar */
-  .block-region {
-    border: 2px white solid;
-  }
+/* Side bar */
+.block-region {
+	border: 2px white solid;
+}
 
-  .block-region div, .block-region h5 {
-    background-color: var(--bg-color) !important;
-    color: var(--text-color) !important;
-  }
+.block-region div, .block-region h5 {
+	background-color: var(--bg-color) !important;
+	color: var(--text-color) !important;
+}
 
-  .block-region a {
-    text-decoration: none;
-    color: var(--a-text-color) !important;
-  }
+.block-region a {
+	text-decoration: none;
+	color: var(--a-text-color) !important;
+}
 
-  .block-region a:hover {
-    text-decoration: underline;
-    color: var(--text-color) !important;
-  }
+.block-region a:hover {
+	text-decoration: underline;
+	color: var(--text-color) !important;
+}
 
-  /* navdrawer */
-  #nav-drawer {
-    border-right: white 2px solid
-  }
+/* navdrawer */
+#nav-drawer {
+	border-right: white 2px solid
+}
 
-  /* Dashboard */
-  #page-header div, #page-header h3, #usersname{
-    background-color: var(--bg-color) !important;
-    color: var(--text-color) !important;
-  }
+/* Dashboard */
+#page-header div, #page-header h3, #usersname{
+	background-color: var(--bg-color) !important;
+	color: var(--text-color) !important;
+}
 
-  .nav-tabs {
-    background-color: var(--bg-darker-color) !important;
-  }
+.nav-tabs {
+	background-color: var(--bg-darker-color) !important;
+}
 
-  .nav-tabs button, .nav-tabs .nav-item .nav-link{
-    background-color: var(--bg-color) !important;
-    color: var(--text-color) !important;
-    border: white 2px solid;
-  }
+.nav-tabs button, .nav-tabs .nav-item .nav-link{
+	background-color: var(--bg-color) !important;
+	color: var(--text-color) !important;
+	border: white 2px solid;
+}
 
-  #coursesearchbox {
-    background-color: var(--bg-color) !important;
-    color: var(--text-color) !important;
-  }
+#coursesearchbox {
+	background-color: var(--bg-color) !important;
+	color: var(--text-color) !important;
+}
 
-  #coursesearchbox::placeholder {
-    color: var(--text-color) !important;
-    background-color: var(--bg-color) !important;
-  }
+#coursesearchbox::placeholder {
+	color: var(--text-color) !important;
+	background-color: var(--bg-color) !important;
+}
 
-  #coursesearch2 button, .singlebutton button{
-    background-color: var(--bg-color) !important;
-    color: var(--a-text-color) !important;
-  }
+#coursesearch2 button, .singlebutton button{
+	background-color: var(--bg-color) !important;
+	color: var(--a-text-color) !important;
+}
 
-  #coursesearch2 button:hover, .singlebutton button:hover {
-    background-color: var(--bg-color) !important;
-    color: var(--text-color) !important;
-    text-decoration: underline;
-  }
+#coursesearch2 button:hover, .singlebutton button:hover {
+	background-color: var(--bg-color) !important;
+	color: var(--text-color) !important;
+	text-decoration: underline;
+}
 
-  .block-region a {
-    background-color: var(--bg-color) !important;
-    color: var(--a-text-color) !important;
-  }
+.block-region a {
+	background-color: var(--bg-color) !important;
+	color: var(--a-text-color) !important;
+}
 
-  /* Tables */
-  .card tr {
-    background-color: #343a40 !important;
-  }
+/* Tables */
+.card tr {
+	background-color: #343a40 !important;
+}
 
-  .card tr:nth-child(odd) {
-    background-color: #49515a !important;
-  }
+.card tr:nth-child(odd) {
+	background-color: #49515a !important;
+}
 
-  /* File Management */
-  .filemanager{
-    display: inline-block;
-    border: 2px white solid;
+/* File Management */
+.filemanager{
+	display: inline-block;
+	border: 2px white solid;
+	
+}
 
-  }
+.filemanager td {
+	background-color: var(--bg-darker-color) !important;
+}
 
-  .filemanager td {
-    background-color: var(--bg-darker-color) !important;
-  }
+.filemanager > div > div > div{
+	background-color: var(--bg-darker-color) !important;
+}
 
-  .filemanager > div > div > div{
-    background-color: var(--bg-darker-color) !important;
-  }
-
-  /* Dropdown menu */
-  #jump-to-activity {
-    background-color: var(--bg-darker-color) !important;
-    color: var(--a-text-lighter-color) !important;
-  }
+/* Dropdown menu */
+#jump-to-activity {
+	background-color: var(--bg-darker-color) !important;
+	color: var(--a-text-lighter-color) !important;
 }
