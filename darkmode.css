@@ -21,6 +21,7 @@
 
 
 
+
 /* Top Navbar */
 .fixed-top.navbar .dropdown-menu {
 	background-color: var(--bg-darker-color) !important;
@@ -35,6 +36,7 @@
 .fixed-top.navbar .dropdown-menu a:hover {
 	background-color: var(--bg-color) !important;
 }
+
 
 
 
@@ -67,6 +69,7 @@
 
 
 
+
 /* Filter Activities Menu */
 .filterActivities,
 #filterActivities,
@@ -74,6 +77,7 @@
 	color: var(--text-color) !important;
 	background-color: var(--bg-color) !important;
 }
+
 
 
 
@@ -109,6 +113,7 @@
 
 
 
+
 /* Side bar */
 .block-region div,
 .block-region h5 {
@@ -134,10 +139,12 @@
 
 
 
+
 /* navdrawer */
 #nav-drawer {
 	border-right: white 2px solid
 }
+
 
 
 
@@ -211,6 +218,7 @@
 
 
 
+
 /* Tables */
 .card tr:nth-child(even) {
 	background-color: var(--bg-color) !important;
@@ -227,6 +235,7 @@
 .card tr:nth-child(even) td {
 	background-color: var(--bg-color) !important;
 }
+
 
 
 
@@ -263,6 +272,7 @@
 
 
 
+
 /* Dropdown menu */
 #jump-to-activity {
 	background-color: var(--bg-darker-color) !important;
@@ -277,11 +287,13 @@
 
 
 
+
 /* Profile Page */
 .profile_tree section {
 	background-color: var(--bg-color) !important;
 	border: white solid 1px !important;
 }
+
 
 
 
@@ -317,6 +329,7 @@
 .popover-region-footer-container {
 	background-color: var(--bg-color) !important;
 }
+
 
 
 
@@ -494,7 +507,7 @@ thead > tr > th {
 }
 }
 
-@-moz-document url-prefix("https://moodle.port.ac.uk/user/") {
+@-moz-document url-prefix("https://moodle.port.ac.uk/") {
 /* Buttons and input boxes  */
 #page .custom-select {
 	background-color: var(--bg-darker-color) !important;
@@ -518,5 +531,10 @@ thead > tr > th {
 
 #page .btn-secondary:hover {
 	text-decoration: underline;
+}
+
+#page input {
+	background-color: var(--bg-darker-color) !important;
+	color: var(--text-color) !important
 }
 }
