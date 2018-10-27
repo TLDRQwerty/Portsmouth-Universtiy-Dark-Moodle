@@ -1,553 +1,259 @@
-@-moz-document url-prefix("https://moodle.port.ac.uk/") {
 /* ==UserStyle==
-@name         Portsmouth University Dark Moodle
-@namespace    github.com/TLDRQwerty/Portsmouth-Uni-Dark-Moodle
-@version      1.0.0
-@license      unlicense
-@preprocessor default
+@name           Dark Portsmouth Moodle
+@namespace      https://github.com/TLDRQwerty/Portsmouth-Universtiy-Dark-Moodle
+@version        1.0.0
+@description    Dark mode for moodle
+@author         TLDRQwerty
 ==/UserStyle== */
-:root {
-	--bg-color: #343a40;
-	--text-color: #f8f9ff;
-	--a-text-color: #aaaaaa;
-	--bg-darker-color: #212121;
-	--text-lighter-color: #f5f6f7
-}
-
-
-
-
-
-
-
-
-
-
-/* Top Navbar */
-.fixed-top.navbar .dropdown-menu {
-	background-color: var(--bg-darker-color) !important;
-	color: var(--a-text-lighter-color) !important;
-	border: white 1px solid;
-}
-
-.fixed-top.navbar .dropdown-menu a {
-	color: var(--text-color) !important;
-}
-
-.fixed-top.navbar .dropdown-menu a:hover {
-	background-color: var(--bg-color) !important;
-}
-
-
-
-
-
-
-
-
-/* Main Course Content */
-#region-main-box,
-#region-main .card {
-	background-color: var(--bg-color) !important;
-	color: var(--text-color) !important;
-}
-
-
-#region-main .card a {
-	text-decoration: none;
-	color: var(--a-text-color) !important;
-}
-
-#region-main .card a:hover {
-	text-decoration: underline;
-	color: var(--text-color) !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Filter Activities Menu */
-.filterActivities,
-#filterActivities,
-#filterActivities::placeholder {
-	color: var(--text-color) !important;
-	background-color: var(--bg-color) !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Header */
-#page-header,
-#page-header h1,
-.breadcrumb,
-.breadcrumb a:hover {
-	background-color: var(--bg-color) !important;
-	color: var(--text-color) !important;
-}
-
-#page-header .withimage {
-	background-image: none !important;
-	background-color: var(--bg-color) !important;
-}
-
-.breadcrumb a {
-	color: var(--a-text-color) !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Side bar */
-.block-region div,
-.block-region h5 {
-	background-color: var(--bg-color) !important;
-	color: var(--text-color) !important;
-}
-
-.block-region a {
-	text-decoration: none;
-	color: var(--a-text-color) !important;
-}
-
-.block-region a:hover {
-	text-decoration: underline;
-	color: var(--text-color) !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* navdrawer */
-#nav-drawer {
-	border-right: white 2px solid
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Dashboard */
-#page-header div,
-#page-header h3,
-#usersname {
-	background-color: var(--bg-color) !important;
-	color: var(--text-color) !important;
-}
-
-.nav-tabs {
-	background-color: var(--bg-darker-color) !important;
-}
-
-.nav-tabs button,
-.nav-tabs .nav-item .nav-link {
-	background-color: var(--bg-color) !important;
-	color: var(--text-color) !important;
-	border: white 2px solid;
-}
-
-#coursesearchbox {
-	background-color: var(--bg-color) !important;
-	color: var(--text-color) !important;
-}
-
-#coursesearchbox::placeholder {
-	color: var(--text-color) !important;
-	background-color: var(--bg-color) !important;
-}
-
-#coursesearch2 button,
-.singlebutton button {
-	background-color: var(--bg-color) !important;
-	color: var(--a-text-color) !important;
-}
-
-#coursesearch2 button:hover,
-.singlebutton button:hover {
-	background-color: var(--bg-color) !important;
-	color: var(--text-color) !important;
-	text-decoration: underline;
-}
-
-.block-region a {
-	background-color: var(--bg-color) !important;
-	color: var(--a-text-color) !important;
-}
-
-.nav-tabs .alert-secondary {
-	background-color: var(--bg-darker-color) !important;
-}
-
-.nav-tabs .alert-secondary .singleselect {
-	background-color: var(--bg-darker-color) !important;
-	color: var(--a-text-lighter-color) !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Tables */
-.card tr:nth-child(even) {
-	background-color: var(--bg-color) !important;
-}
-
-.card tr:nth-child(odd) {
-	background-color: var(--bg-darker-color) !important;
-}
-
-.card tr:nth-child(odd) td {
-	background-color: var(--bg-darker-color) !important;
-}
-
-.card tr:nth-child(even) td {
-	background-color: var(--bg-color) !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* File Management */
-.filemanager {
-	display: inline-block;
-	border: 2px white solid;
-}
-
-.filemanager td {
-	background-color: var(--bg-darker-color) !important;
-}
-
-.filemanager > div > div > div {
-	background-color: var(--bg-darker-color) !important;
-}
-
-#page-wrapper {
-	background-color: var(--bg-color) !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Dropdown menu */
-#jump-to-activity {
-	background-color: var(--bg-darker-color) !important;
-	color: var(--a-text-lighter-color) !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Profile Page */
-.profile_tree section {
-	background-color: var(--bg-color) !important;
-	border: white solid 1px !important;
-}
-
-
-
-
-
-
-
-
-
-/* Notifications */
-.popover-region-header-container {
-	background-color: var(--bg-darker-color) !important;
-	color: var(--text-lighter-color) !important;
-}
-
-.popover-region-header-container div > a > i {
-	color: var(--text-lighter-color) !important;
-}
-
-.popover-region-content-container {
-	background-color: var(--bg-color) !important;
-	color: var(--text-color) !important;
-}
-
-.popover-region-container a {
-
-	color: var(--a-text-color) !important;
-}
-
-.popover-region-container a:hover {
-
-	color: var(--text-color) !important;
-}
-
-.popover-region-footer-container {
-	background-color: var(--bg-color) !important;
-}
-
-
-
-
-
-
-
-
-/* Accesibility Options */
-.modal-content {
-	background-color: var(--bg-color) !important;
-	color: var(--text-color) !important;
-}
-
-.modal-content .modal-header {
-	background-color: var(--bg-darker-color) !important;
-	color: var(--text-color) !important;
-}
-
-.modal-content .modal-header > button {
-	color: var(--a-text-color) !important;
-}
-
-.block_accessibility {
-	background-color: var(--bg-color) !important;
-}
-}
-
-@-moz-document url-prefix("https://moodle.port.ac.uk/message/notificationpreferences.php?") {
-/* Notifcation Settings */
-thead > tr > th {
-	background-color: #343a40 !important;
-}
-}
-
-@-moz-document url-prefix("https://moodle.port.ac.uk/user/preferences.php") {
-/* Preferences */
-.card-body > div > div > div {
-	border: white 1px solid;
-}
-}
-
-@-moz-document url-prefix("https://moodle.port.ac.uk/course/view.php") {
-/* Staff Helf Resources */
-.summary > div > div {
-	background-color: var(--bg-darker-color) !important;
-}
-}
-
-@-moz-document url("https://moodle.port.ac.uk/user") {
-/* Login Page */
-#page.container-fluid div {
-	background-color: var(--bg-color) !important;
-	color: var(--text-color) !important;
-	width: 100% !important;
-}
-
-.block_login {
-	background-color: var(--bg-color) !important;
-	color: var(--text-color) !important;
-}
-
-#site-news-forum > h2 {
-	color: var(--text-color) !important;
-}
-
-#site-news-forum > div {
-	background-color: var(--bg-color) !important;
-	color: var(--text-color) !important;
-}
-
-#tel-tales h2 {
-	color: var(--text-color) !important;
-}
-
-#tel-tales h3 a {
-	color: var(--a-text-color) !important;
-}
-
-#tel-tales h3 i {
-	color: var(--bg-darker-color) !important;
-}
-
-#tel-tales h3 a:hover {
-	color: var(--text-color) !important;
-}
-
-#uop-links > h2 {
-	color: var(--text-color) !important;
-}
-
-#uop-links a {
-	color: var(--a-text-color) !important;
-}
-
-#uop-links a:hover {
-	color: var(--text-color) !important;
-}
-
-#moodleLogo {
-	color: var(--text-color) !important;
-	border-left: white 1px solid !important;
-}
-
-.block_login {
-	background-color: var(--bg-darker-color) !important;
-	border: solid 1px white;
-}
-
-.block-region {
-	border: none !important;
-}
-
-.block-region div {
-	background-color: var(--bg-darker-color) !important;
-}
-
-.block-region div h5 {
-	background-color: var(--bg-darker-color) !important;
-}
-
-.block-region div a {
-	background-color: var(--bg-darker-color) !important;
-	color: var(--a-text-color) !important;
-}
-
-.block-region div a:hover {
-	color: var(--text-color) !important;
-}
-
-#login input {
-	background-color: var(--bg-color) !important;
-	color: var(--text-color) !important;
-}
-
-#login input:placeholder {
-	color: var(--a-text-color) !important;
-}
-
-#page-site-index .block_login input.btn-primary {
-	background-color: var(--bg-color) !important;
-	border-color: var(--a-text-color) !important;
-}
-
-#page-site-index .block_login input.btn-primary:hover {
-	background-color: var(--bg-color) !important;
-	border-color: var(--text-color) !important;
-}
-
-#page-site-index .block_login {
-	background-color: var(--bg-darker-color) !important;
-}
-}
-
-@-moz-document url-prefix("https://moodle.port.ac.uk/message/index.php") {
-/* Messages Page */
-.contacts-area > .searchtextarea {
-	background-color: var(--bg-color) !important;
-}
-
-.contacts-area > .searchtextarea > input {
-	background-color: var(--bg-darker-color) !important;
-	border: white solid 1px !important;
-}
-
-.contacts-area > .searchtextarea > input::placeholder {
-	color: var(--text-lighter-color) !important;
-}
-
-.tabs > .tab {
-	background-color: var(--bg-darker-color) !important;
-}
-
-
-.tabs > .selected > i {
-	color: var(--text-color) !important;
-}
-}
-
-@-moz-document url-prefix("https://moodle.port.ac.uk/user/") {
-/* Buttons and input boxes  */
-#page .custom-select {
-	background-color: var(--bg-darker-color) !important;
-	color: var(--text-color);
-}
-
-#page .btn-secondary {
-	background-color: var(--bg-color) !important;
-	border-color: white !important;
-	color: var(--a-text-color) !important;
-}
-
-#page .btn-primary {
-	background-color: var(--bg-darker-color) !important;
-	border-color: white !important;
-}
-
-#page .btn-primary:hover {
-	text-decoration: underline;
-}
-
-#page .btn-secondary:hover {
-	text-decoration: underline;
-}
-
-#page input {
-	background-color: var(--bg-darker-color) !important;
-	color: var(--text-color) !important
-}
+@-moz-document url-prefix("https://moodle.port.ac.uk/") {
+	:root {
+		--bg-color: #343a40;
+		--text-color: #f8f9ff;
+		--bg-darker-color: #212121;
+		--text-lighter-color: #f5f6f7;
+		--light-border-color: white;
+
+		--border: var(--light-border-color) solid 1px;
+
+		--a-text-color: #aaaaaa;
+		--a-background-color: var(--bg-color);
+
+		--input-bg-color: var(--bg-color);
+		--input-text-color: var(--text-color);
+
+		--button-bg-color: var(--bg-color);
+		--button-text-color: var(--a-text-color);
+		--button-border-color: white;
+
+		--button-hover-text-color: var(--text-color);
+		--button-hover-border-color: var(--text-color);
+		--button-active-color: var(--bg-color);
+	}
+}
+
+@-moz-document url("https://moodle.port.ac.uk/") {
+	#page-wrapper,
+	html,
+	#front-navbar div {
+		background: var(--bg-color) !important;
+	}
+
+	#page-wrapper h2,
+	h3,
+	h3 a {
+		color: var(--text-color) !important;
+	}
+
+	#moodleLogo {
+		color: var(--text-color) !important;
+		border-color: var(--text-color) !important;
+	}
+
+	.forumpost,
+	#page-site-index .block_login,
+	.generalbox {
+		background: var(--bg-darker-color) !important;
+		border: var(--border) !important;
+		color: var(--text-color);
+	}
+
+	#page-site-index .block_login h5 {
+		color: var(--text-color);
+	}
+
+	.loginform input {
+		background: var(--input-bg-color) !important;
+		color: var(--input-text-color);
+	}
+
+	#page-site-index .block_login input.btn-primary {
+		background: var(--button-bg-color) !important;
+		color: var(--button-text-color) !important;
+		border-color: var(--button-border-color) !important;
+	}
+
+	#page-site-index .block_login input.btn-primary:hover {
+		color: var(--button-hover-text-color) !important;
+		border-color: var(--button-hover-border-color) !important;
+	}
+}
+
+@-moz-document url-prefix("https://moodle.port.ac.uk/") {
+	#page,
+	#page-header div,
+	#page-content,
+	#region-main-box,
+	#page-wrapper {
+		background: var(--bg-color) !important;
+	}
+
+	.card,
+	.dropdown-menu,
+	.nav-item .popover-region-container,
+	.popover-region-footer-container,
+	.modal-content,
+	.card div {
+		background: var(--bg-darker-color) !important;
+		color: var(--text-color) !important;
+	}
+
+	.popover-region-seeall-text {
+		color: var(--a-text-color) !important;
+	}
+
+	.popover-region-seeall-text:hover {
+		color: var(--text-color) !important;
+		border-bottom: var(--text-color)
+	}
+
+	.dropdown-menu a {
+		color: var(--text-color);
+	}
+
+	.dropdown-menu a:hover {
+		background: var(--a-background-color);
+		color: var(--text-color) !important;
+	}
+
+
+	#page,
+	h3,
+	h5,
+	#usersname {
+		color: var(--text-color) !important;
+	}
+
+	#page a,
+	#page .icon,
+	.dropdown-menu a {
+		color: var(--a-text-color) !important;
+	}
+
+	#page a:hover,
+	#page .icon:hover {
+		color: var(--text-color) !important;
+	}
+
+	#block-region-side-pre .card,
+	#block-region-side-pre .card a {
+		background: var(--bg-darker-color) !important;
+	}
+
+	#region-main .card {
+		background: var(--bg-color);
+	}
+
+	#block-region-side-pre .card,
+	#region-main .card:nth-child(1),
+	.dropdown-menu {
+		border: var(--border) !important;
+	}
+
+	#region-main .card .nav-tabs {
+		background: var(--bg-darker-color);
+		margin-left: 0px;
+		width: 111%;
+	}
+
+	#page input {
+		background: var(--input-bg-color) !important;
+		color: var(--input-text-color);
+	}
+
+	#page input:placeholder {
+		color: var(--text-color) !important;
+	}
+
+	#page button,
+	#page .nav-link {
+		background: var(--button-bg-color) !important;
+		border: var(--border);
+		color: var(--button-text-color) !important;
+	}
+
+	#page button:hover,
+	#page .nav-link:hover {
+		color: var(--button-hover-text-color) !important;
+	}
+
+	#page .nav-link.active {
+		background: var(--button-active-color) !important;
+	}
+
+	#nav-drawer {
+		border-right: var(--border)
+	}
+
+	#page button:not(#region-main) {
+		background: var(--bg-darker-color) !important;
+	}
+
+	#page-navbar .breadcrumb {
+		background: var(--bg-darker-color) !important;
+		color: var(--text-color);
+		border: var(--border) !important;
+	}
+}
+
+@-moz-document url-prefix("https://moodle.port.ac.uk/course/"),
+url-prefix("https://moodle.port.ac.uk/user/") {
+	#page .navbar-nav,
+	#page .node_category {
+		background: var(--bg-darker-color) !important;
+		border-bottom: var(--border);
+	}
+
+	.page-header-headings h1 {
+		background: var(--bg-darker-color) !important;
+		color: var(--text-color);
+		border: var(--border);
+	}
+
+	#page .summary div,
+	:not(.mediaplugin mediaplugin_videojs) {
+		background: var(--bg-darker-color) !important
+	}
+
+	tr:nth-child(odd) td {
+		background: var(--bg-color) !important;
+	}
+
+	tr:nth-child(even) td {
+		background: var(--bg-darker-color) !important;
+	}
+
+	table td {
+		border: var(--border)!important;
+	}
+
+	table {
+		border: var(--border) !important;
+	}
+
+	#filterActivities {
+		border: var(--border) !important;
+	}
+}
+
+@-moz-document url("https://moodle.port.ac.uk/message/index.php") {
+	.searchtextarea,
+	.tabs .tab {
+		background: var(--bg-darker-color) !important;
+		border-bottom: var(--border) !important;
+	}
+
+	.tabs > div {
+		color: var(--a-text-color) !important;
+	}
+
+	.tabs > div:hover {
+		color: var(--text-color) !important;
+	}
+}
+
+@-moz-document url("https://moodle.port.ac.uk/login/index.php") {
+	#page .card-header {
+		border-bottom: var(--border) !important;
+		background: var(--bg-color) !important;
+	}
 }
