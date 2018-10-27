@@ -12,7 +12,7 @@
 		--bg-darker-color: hsl(0, 0%, 7%);
 		--text-lighter-color: #f5f6f7;
 		--light-border-color: white;
-		
+
 		--uni-bg-color: #2a0033;
 		--uni-bg-darker-color: #1d0023;
 
@@ -79,7 +79,6 @@
 		color: var(--button-hover-text-color) !important;
 		border-color: var(--button-hover-border-color) !important;
 	}
-
 }
 
 @-moz-document url-prefix("https://moodle.port.ac.uk/") {
@@ -90,15 +89,21 @@
 	#page-wrapper {
 		background: var(--bg-color) !important;
 	}
-	
-	#page-footer, #page-wrapper > nav, #page-wrapper > nav button, #footerBarBg, #footerBarBg div  {
+
+	#page-footer,
+	#page-wrapper > nav,
+	#page-wrapper > nav button,
+	#footerBarBg,
+	#footerBarBg div {
 		background: var(--uni-bg-color) !important;
 	}
-	
-	.edit-bar, .edit-bar #dropdownMenuLink, #page-footer {
+
+	.edit-bar,
+	.edit-bar #dropdownMenuLink,
+	#page-footer {
 		background: var(--uni-bg-darker-color) !important;
 	}
-	
+
 	.edit-bar a {
 		border: var(--uni-bg-darker-color) !important;
 	}
@@ -143,20 +148,19 @@
 	#page .icon,
 	.dropdown-menu a,
 	nav.list-group a,
-	.navbar-dark a .icon{
+	.navbar-dark a .icon {
 		color: var(--a-text-color) !important;
 	}
 
 	#page a:hover,
 	#page .icon:hover,
 	nav.list-group a:hover,
-	.navbar-dark a .icon:hover{
+	.navbar-dark a .icon:hover {
 		color: var(--text-color) !important;
 	}
-	
-	nav.list-group a:hover {
-				background: var(--a-background-color) !important;
 
+	nav.list-group a:hover {
+		background: var(--a-background-color) !important;
 	}
 
 	#block-region-side-pre .card,
@@ -181,8 +185,6 @@
 
 	#region-main .card .nav-tabs {
 		background: var(--bg-darker-color);
-		margin-left: 0px;
-		width: 111%;
 	}
 
 	#page input {
@@ -202,7 +204,7 @@
 	#page .nav-link,
 	.page button:not(.close),
 	#page select,
-	.modal-footer button{
+	.modal-footer button {
 		background: var(--button-bg-color) !important;
 		border: var(--border);
 		color: var(--button-text-color) !important;
@@ -231,7 +233,7 @@
 		color: var(--text-color);
 		border: var(--border) !important;
 	}
-	
+
 	tr:nth-child(odd) td {
 		background: var(--bg-color) !important;
 	}
@@ -247,7 +249,6 @@
 	table {
 		border: var(--border) !important;
 	}
-
 }
 
 @-moz-document url-prefix("https://moodle.port.ac.uk/course/"),
@@ -269,7 +270,7 @@ url-prefix("https://moodle.port.ac.uk/user/") {
 		background: var(--bg-darker-color) !important
 	}
 
-	
+
 	#filterActivities {
 		border: var(--border) !important;
 	}
