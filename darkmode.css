@@ -142,13 +142,15 @@
 	#page a,
 	#page .icon,
 	.dropdown-menu a,
-	nav.list-group a {
+	nav.list-group a,
+	.navbar-dark a .icon{
 		color: var(--a-text-color) !important;
 	}
 
 	#page a:hover,
 	#page .icon:hover,
-	nav.list-group a:hover {
+	nav.list-group a:hover,
+	.navbar-dark a .icon:hover{
 		color: var(--text-color) !important;
 	}
 	
