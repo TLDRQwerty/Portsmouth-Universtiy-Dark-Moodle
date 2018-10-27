@@ -7,9 +7,9 @@
 ==/UserStyle== */
 @-moz-document url-prefix("https://moodle.port.ac.uk/") {
 	:root {
-		--bg-color: #343a40;
+		--bg-color: hsl(0, 0%, 11%);
 		--text-color: #f8f9ff;
-		--bg-darker-color: #212121;
+		--bg-darker-color: hsl(0, 0%, 7%);
 		--text-lighter-color: #f5f6f7;
 		--light-border-color: white;
 
@@ -164,15 +164,23 @@
 		color: var(--text-color) !important;
 	}
 
+	#page button:not(#region-main) {
+		background: var(--bg-darker-color) !important;
+	}
+
 	#page button,
-	#page .nav-link {
+	#page .nav-link,
+	.page button:not(.close),
+	#page select {
 		background: var(--button-bg-color) !important;
 		border: var(--border);
 		color: var(--button-text-color) !important;
 	}
 
 	#page button:hover,
-	#page .nav-link:hover {
+	#page .nav-link:hover,
+	.modal-content button:not(.close):hover,
+	#page select:hover {
 		color: var(--button-hover-text-color) !important;
 	}
 
@@ -184,9 +192,7 @@
 		border-right: var(--border)
 	}
 
-	#page button:not(#region-main) {
-		background: var(--bg-darker-color) !important;
-	}
+
 
 	#page-navbar .breadcrumb {
 		background: var(--bg-darker-color) !important;
