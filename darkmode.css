@@ -12,6 +12,9 @@
 		--bg-darker-color: hsl(0, 0%, 7%);
 		--text-lighter-color: #f5f6f7;
 		--light-border-color: white;
+		
+		--uni-bg-color: #2a0033;
+		--uni-bg-darker-color: #1d0023;
 
 		--border: var(--light-border-color) solid 1px;
 
@@ -76,6 +79,7 @@
 		color: var(--button-hover-text-color) !important;
 		border-color: var(--button-hover-border-color) !important;
 	}
+
 }
 
 @-moz-document url-prefix("https://moodle.port.ac.uk/") {
@@ -86,13 +90,24 @@
 	#page-wrapper {
 		background: var(--bg-color) !important;
 	}
+	
+	#page-footer, #page-wrapper > nav, #page-wrapper > nav button, #footerBarBg, #footerBarBg div  {
+		background: var(--uni-bg-color) !important;
+	}
+	
+	.edit-bar, .edit-bar #dropdownMenuLink, #page-footer {
+		background: var(--uni-bg-darker-color) !important;
+	}
+	
+	.edit-bar a {
+		border: var(--uni-bg-darker-color) !important;
+	}
 
 	.card,
 	.dropdown-menu,
 	.nav-item .popover-region-container,
 	.popover-region-footer-container,
 	.modal-content,
-	.card div,
 	nav.list-group a {
 		background: var(--bg-darker-color) !important;
 		color: var(--text-color) !important;
@@ -214,6 +229,23 @@
 		color: var(--text-color);
 		border: var(--border) !important;
 	}
+	
+	tr:nth-child(odd) td {
+		background: var(--bg-color) !important;
+	}
+
+	tr:nth-child(even) td {
+		background: var(--bg-darker-color) !important;
+	}
+
+	table td {
+		border: var(--border)!important;
+	}
+
+	table {
+		border: var(--border) !important;
+	}
+
 }
 
 @-moz-document url-prefix("https://moodle.port.ac.uk/course/"),
@@ -235,22 +267,7 @@ url-prefix("https://moodle.port.ac.uk/user/") {
 		background: var(--bg-darker-color) !important
 	}
 
-	tr:nth-child(odd) td {
-		background: var(--bg-color) !important;
-	}
-
-	tr:nth-child(even) td {
-		background: var(--bg-darker-color) !important;
-	}
-
-	table td {
-		border: var(--border)!important;
-	}
-
-	table {
-		border: var(--border) !important;
-	}
-
+	
 	#filterActivities {
 		border: var(--border) !important;
 	}
@@ -275,6 +292,6 @@ url-prefix("https://moodle.port.ac.uk/user/") {
 @-moz-document url("https://moodle.port.ac.uk/login/index.php") {
 	#page .card-header {
 		border-bottom: var(--border) !important;
-		background: var(--bg-color) !important;
+		background: var(--uni-bg-color) !important;
 	}
 }
