@@ -92,7 +92,8 @@
 	.nav-item .popover-region-container,
 	.popover-region-footer-container,
 	.modal-content,
-	.card div {
+	.card div,
+	nav.list-group a {
 		background: var(--bg-darker-color) !important;
 		color: var(--text-color) !important;
 	}
@@ -125,13 +126,20 @@
 
 	#page a,
 	#page .icon,
-	.dropdown-menu a {
+	.dropdown-menu a,
+	nav.list-group a {
 		color: var(--a-text-color) !important;
 	}
 
 	#page a:hover,
-	#page .icon:hover {
+	#page .icon:hover,
+	nav.list-group a:hover {
 		color: var(--text-color) !important;
+	}
+	
+	nav.list-group a:hover {
+				background: var(--a-background-color) !important;
+
 	}
 
 	#block-region-side-pre .card,
@@ -145,8 +153,13 @@
 
 	#block-region-side-pre .card,
 	#region-main .card:nth-child(1),
-	.dropdown-menu {
+	.dropdown-menu,
+	.foldertree {
 		border: var(--border) !important;
+	}
+
+	.foldertree {
+		width: fit-content;
 	}
 
 	#region-main .card .nav-tabs {
@@ -171,7 +184,8 @@
 	#page button,
 	#page .nav-link,
 	.page button:not(.close),
-	#page select {
+	#page select,
+	.modal-footer button{
 		background: var(--button-bg-color) !important;
 		border: var(--border);
 		color: var(--button-text-color) !important;
@@ -189,7 +203,8 @@
 	}
 
 	#nav-drawer {
-		border-right: var(--border)
+		border-right: var(--border);
+		background: var(--bg-darker-color)
 	}
 
 
