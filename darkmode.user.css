@@ -285,6 +285,10 @@
 	td ul li span:hover {
 		color: var(--text-color) !important;
 	}
+	
+	.card ol {
+		color: var(--text-color) !important;
+	}
 }
 
 @-moz-document url-prefix("https://moodle.port.ac.uk/course/"),
