@@ -309,11 +309,26 @@ url-prefix("https://moodle.port.ac.uk/user/") {
 	:not(.mediaplugin mediaplugin_videojs) {
 		background: var(--bg-darker-color) !important
 	}
-
+    
+    h1 {
+        color: var(--text-color) !important;
+    }
 
 	#filterActivities {
 		border: var(--border) !important;
 	}
+    
+    .course-content,  div[role="main"]{
+        background: var(--bg-color) !important;
+    }
+    
+    .course-content  li {
+        background: var(--bg-color) !important;
+    }
+    .uop-attostylesbox-calltoaction {
+        background: var(--bg-darker-color) !important;
+        color: var(--text-color)
+    }
 }
 
 @-moz-document url("https://moodle.port.ac.uk/message/index.php") {
